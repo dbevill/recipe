@@ -1,0 +1,172 @@
+/* -------------------- IMPORTED FONTS -------------------- */
+@import url('https://fonts.google.com/share?selection.family=Bebas%20Neue%7CMontserrat:ital,wght@0,400;0,700;1,400');
+
+/*-------------------- CSS RESET --------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html{
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+/* -------------------- ROOT VARIABLES  -------------------- */
+:root {
+    font-family: "Bebas Neue", "Montserrat", serif;
+    font-size: 1.25em;
+    --black:#0D0D0D;
+    --orange: #EB5428;
+    --white: #F2F2F2;
+    --cyan: #7ABFBF;
+    --lightblue: rgba(122, 191, 191, .5);
+}
+/*Bebas Neue- Regular 400
+H1- 40px
+H2- 30px
+H3- 25px
+NAV A- 20PX 
+NAV SPAN- 20PX
+MENU LI- 20PX
+#SOCIAL LI- 20PX
+FOOTER- 20PX
+
+Montserrat- Regular 400
+P- 16PX
+DD- 16PX
+LI- 16PX
+NAV- 16PX INPUT- 16PX
+
+Montserrat- Bold 700
+DT- 16PX*/
+
+/* --------------------GLOBAL STYLES (mobile first/small) --------------------*/
+@media screen and (min-width:414px){
+    body{
+        width:100%;
+    }*/
+    h1{
+        font-family: "Bebas Neue";
+        font-weight: 400;
+        font-size: 40px;
+    }
+    h2{
+        font-family: "Bebas Neue";
+        font-weight: 400;
+        font-size: 30px;
+    }
+    h3{
+        font-family: "Bebas Neue";
+        font-weight: 400;
+        font-size: 25px;
+    }
+    nav a {
+        font-family: "Bebas Neue";
+        font-weight: 400;
+        font-size: 20px;
+    }
+    nav span{
+        font-family: "Bebas Neue";
+        font-weight: 400;
+        font-size: 20px;
+    }
+    menu li{
+        font-family: "Bebas Neue";
+        font-weight: 400;
+        font-size: 20px;
+    }
+    #social li{
+        font-family: "Bebas Neue";
+        font-weight: 400;
+        font-size: 20px;
+    }
+    footer{
+        font-family: "Bebas Neue";
+        font-weight: 400;
+        font-size: 20px;
+    }
+    p {
+        font-family: "Montserrat";
+        font-weight: 400;
+        font-size: 16px;
+    }
+    dd {
+        font-family: "Montserrat";
+        font-weight: 400;
+        font-size: 16px;
+    }
+    li {
+        font-family: "Montserrat";
+        font-weight: 400;
+        font-size: 16px;
+    }
+    nav {
+        font-family: "Montserrat";
+        font-weight: 400;
+        font-size: 16px;
+    }
+    input {
+        font-family: "Montserrat";
+        font-weight: 400;
+        font-size: 16px;
+    }
+    dt {
+        font-family: "Montserrat";
+        font-weight: 700;
+        font-size: 16px;
+    }
+}
+/*-------------------- MEDIA QUERY (medium) --------------------------------*/
+@media screen and (min-width:768px){
+
+}
+/*-------------------- MEDIA QUERY (large) ------------------------------------*/
+@media screen and (min-width: 1280px){
+
+}
+
