@@ -89,11 +89,15 @@ DT- 16PX*/
 @media screen and (min-width:414px){
     body{
         width:100%;
-    }*/
+        /*display: grid;
+        grid-template-columns: 1fr;*/
+    }
     h1{
         font-family: "Bebas Neue";
         font-weight: 400;
         font-size: 40px;
+        padding-top: 200px;
+        text-align: center;
     }
     h2{
         font-family: "Bebas Neue";
@@ -121,6 +125,16 @@ DT- 16PX*/
         font-weight: 400;
         font-size: 20px;
         text-decoration: none;
+        display: inline-block;
+        padding-top: 25px;
+    }
+    header img{
+        width: 100%;
+        padding-top: 15px;
+    }
+    header p{
+        text-align: left;
+        padding: 10px;
     }
     #social li{
         font-family: "Bebas Neue";
@@ -162,10 +176,169 @@ DT- 16PX*/
         font-weight: 700;
         font-size: 16px;
     }
+    nav {
+        grid-area: nav;
+        min-width: 414px;
+        background-color: #ffffff;
+        box-shadow: 0px 3px 3px #bbb;
+        position: fixed;
+        top: 0;
+        z-index:5;
+    }
+    nav ul {
+        grid-area: hamberger;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        overflow: hidden;
+        max-height: 0;
+    }
+    nav li img {
+        display: none;
+    }
+    nav li a {
+        display: block;
+        padding: 20px;
+        text-decoration: none;
+    }
+    nav label {
+        cursor: pointer;
+        display: inline-block;
+        user-select: none;
+        position: relative;
+        bottom: 5px;
+        left: 30px;
+        top: 5px;
+        padding-bottom: 10px;
+    }
+    nav span {
+        display: block;
+        position: relative;
+     }
+    nav label svg {
+        display: block;
+    }
+    label span:before, label span:after {
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+    }
+    nav input {
+        display: none;
+    }
+    nav input:checked ~ ul {
+        max-height: 550px;
+    }
+    nav h2 {
+        visibility: hidden;
+        height: 1px;
+        width: 1px;
+    }
+    menu{
+        list-style-type: none;
+        display: inline;
+        color: #EB5428;
+
+    }
+    menu svg{
+        position: relative;
+        bottom: 15px;
+        left: 35px;
+    }
+    menu a{
+        color: #EB5428;
+        text-decoration: none;
+    }
+    .searchbar{
+        display: flex;
+        position: relative;
+        top: -3150px;
+        z-index: 0;
+    }
+    .searchbar button{
+        color:#F2F2F2;
+        border: #EB5428 5px solid;
+    }
+    .searchbar h3{
+        visibility: hidden;
+        line-height: 0%;
+    }
+    .searchbar input{
+        width: 250px;
+        height: 60px;
+        border: #EB5428 5px solid;
+    }
+    .searchbar svg{
+        color: #bbb;
+    }
+    .details h2{
+        text-align: center;
+        padding: 10px;
+    }
+    .details dt{
+        float: left;
+        clear: left;
+        padding: 5px;
+        margin-left: 5px;
+    }
+    .details dd{
+        padding: 5px;
+    }
+    .ingredients h2{
+        text-align: center;
+        padding: 10px;
+    }
+    .ingredients li{
+        text-align: left;
+        padding-left: 15px;
+        padding-bottom: 15px;
+    }
     .ingredients{
         list-style-type: circle;
     }
-}
+    .directions h2{
+        text-align: center;
+        padding: 10px;
+    }
+    .directions li{
+        text-align: left;
+        padding: 10px;
+    }
+    aside{
+        background-color:#7ABFBF;;
+    }
+    aside h2{
+        text-align: center;
+        padding: 10px;
+    }
+    .sidedishes img{
+        float: left;
+        padding: 10px;
+        margin-left: 5px;
+        margin-bottom: 10px;
+        height: 125px;
+    }
+    .sidedishes a{
+        padding-left: 1px;
+        text-decoration: none;
+        color: #0D0D0D;
+    }
+    .sidedishes h4{
+        visibility: hidden;
+        height: 10px;
+    }
+    .sidedishes p{
+        padding-top: 10px;
+    }
+    }
+    /*#sign-in{
+        display: flex;
+        position: relative;
+        top: 0px;
+    }*/
+
 /*-------------------- MEDIA QUERY (medium) --------------------------------*/
 @media screen and (min-width:768px){
 
@@ -174,4 +347,4 @@ DT- 16PX*/
 @media screen and (min-width: 1280px){
 
 }
-
+/*<button type="submit"><i class="fa fa-search"></i>></button>*/
