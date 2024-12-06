@@ -253,9 +253,10 @@ DT- 16PX*/
     }
     .searchbar{
         display: flex;
-        position: relative;
-        top: -3150px;
-        z-index: 0;
+        position: absolute;
+        /*top: -3700px;*/
+        bottom: 350px;
+        z-index: 1;
     }
     .searchbar button{
         color:#F2F2F2;
@@ -325,11 +326,52 @@ DT- 16PX*/
         text-decoration: none;
         color: #0D0D0D;
     }
+    .sidedishes h3{
+        padding-top: 0px;
+    }
     .sidedishes h4{
         visibility: hidden;
         height: 10px;
     }
     .sidedishes p{
+        padding-top: 10px;
+    }
+    .sidedishes svg{
+        border: #F2F2F2;
+        fill: #EB5428; 
+    }
+    .sidedishes dd{
+        visibility: collapse;
+    }
+    footer h3, footer h2{
+        visibility: hidden;
+        height: 0px;
+    }
+    #social li{
+        list-style-type: none;
+        display: inline;
+        color: #EB5428;
+        padding-top: 5em;
+    }
+    #social svg{
+        position: relative;
+        bottom: 15px;
+        left: 50px;
+
+    }
+    #social a{
+        color: #EB5428;
+        text-decoration: none;
+        /*bottom: 5px;*/
+    }
+    footer {
+        text-align: center;
+        justify-items: center;
+        padding-top: 20px;
+    }
+    footer img{
+        height: 150px;
+        position: relative;
         padding-top: 10px;
     }
     }
