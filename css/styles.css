@@ -845,9 +845,8 @@ DT- 16PX*/
     header p{
         position: relative;
         left: 800px;
-        right: 50px;
         bottom: 750px;
-        width: 100px;
+        width: 40%;
         text-align: left;
         padding: 10px;
     }
